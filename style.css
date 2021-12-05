@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 750px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -38,6 +38,7 @@ td {
 
 .list-number {
   width: 5%;
+  text-align: left;
 }
 
 .table-header {
@@ -72,4 +73,8 @@ li:last-child::after {
 
 .table-header--9:after {
   content: ":";
+}
+
+.selection-box {
+  width: 100px;
 }
