@@ -12,28 +12,30 @@
 table {
   width: 100%;
   align: center;
+  margin-top: 100px;
   /* table-layout: fixed; */
 }
 
 table,
 th,
 td {
-  border: 1px solid rgb(116, 8, 8);
+  border: 1px solid red;
 }
 
 .main-header {
   height: 100px;
+  font-family: Engagement;
   text-align: center;
   text-transform: uppercase;
-  font-style: italic;
   border: none;
 }
 
-.img {
+img {
   /* max-width: 100%;
   max-height: 100%;
   display: block; */
-  height: 75px;
+  height: 100px;
+  padding: 1px;
 }
 
 .list-number {
@@ -44,24 +46,38 @@ td {
 .table-header {
   text-align: right;
   width: 30%;
+  border-radius: 0 25px 0 25px;
+  padding-right: 15px;
 }
 
-.filling-field {
+.text-field {
   width: 45%;
 }
 
-.filling {
+.text {
   display: inline-block;
-  border: 1px solid rgb(116, 8, 8);
+  border: 1px solid red;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--box {
+  padding-right: 5px;
+}
+
+.textbox--stretch {
+  width: 100%;
 }
 
 li {
   display: inline-block;
 }
 
-.filling-li {
+/* .text-link {
   border: none;
-}
+} */
 
 li:after {
   content: ",";
@@ -71,10 +87,14 @@ li:last-child::after {
   content: none;
 }
 
-.table-header--9:after {
-  content: ":";
-}
-
 .selection-box {
   width: 100px;
+}
+
+a {
+  color: rgb(7, 7, 204);
+}
+
+.link-visited {
+  color: rgb(123, 65, 177);
 }
